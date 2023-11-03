@@ -18,10 +18,10 @@ hp_avg=$(awk '{sum += $3} END {print sum / NR}' $filename)
 # Use awk to calculate the average Attack and store it in a variable
 attack_avg=$(awk '{sum += $4} END {print sum / NR}' $filename)
 
-# Display the Summart of Data
+# Display the Summary of Data
 echo "===== SUMMARY OF DATA FILE ====="
 echo "   Filename: $filename
 echo "   Total Pokemon: $total
 echo "   Avg. HP: $hp_avg
-echo "   Avg. Attack: attack_avg
+echo "   Avg. Attack: $attack_avg
 echo "===== END SUMMARY ====="
